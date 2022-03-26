@@ -1,0 +1,35 @@
+<%- include('./header'); %>
+
+    <form action="/inscrire" method="POST" class="flex-container inscription" enctype="multipart/form-data">
+        <div class="flex-container premiere-etape">
+          <div class="flex-container erreur-etape-1 hide-content">
+          </div>
+          <div class="flex-container identifiant-box">
+              <span>@</span>
+              <input class="input-field" type="text" name="identifiant" placeholder="Identifiant" required>            
+          </div>
+          <input class="input-field mdp1" type="password" name="mdp" placeholder="Mot de Passe">
+          <input class="input-field mdp2" type="password" name="mdp2" placeholder="Confirmation Mot de Passe">
+          <button class="btn etape-suivante" type="button">Suivant</button>
+        </div>
+        <div  class="flex-container deuxieme-etape hide-content">
+            <i class="material-icons profile-avatar">person</i>
+            <div class="file-field input-field">
+                <div class="btn">
+                  <span>Avatar</span>
+                  <input type="file" name='avatar'>
+                </div>
+                <div class="file-path-wrapper">
+                  <input placeholder="Avatar"  class="file-path validate" type="text">
+                </div>
+              </div>
+            <input class="input-field" type="text" name="affichage" placeholder="Nom d'affichage">
+            <button type="submit" class="btn">Valider</button>
+        </div>
+    </form>
+
+
+
+    <script src="./js/fonctions.js"></script>
+    <script src="./js/inscription.js" type="text/javascript"></script>
+<%- include('./footer'); %>

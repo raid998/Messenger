@@ -1,0 +1,37 @@
+<%-null, {isAuthenticated: isAuthenticated} %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <title></title>
+    <script src="./js/socket.io.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 
+        Ce ficher contient les éléments d'en-tête qui sont statiques pour toutes les page html de notre application
+    -->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo"><i class="fas fa-comments"></i></a>
+          <% if(isAuthenticated) { %>
+          <a href="#" data-target="sidebar-contacts" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <% } %>
+          <ul class="right hide-on-med-and-down">
+            <% if(!isAuthenticated) { %>
+            <li id="login"><a href="/connecter">Se Connecter</a></li>
+            <li id="signup"><a href="/inscrire">S'inscrire</a></li>
+            <% }  else { %>
+              
+            <li id="logout"><a href="/deconnecter">Se Déconnecter</a></li>
+            <% } %>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    

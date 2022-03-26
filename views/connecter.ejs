@@ -1,0 +1,21 @@
+<%- include('./header'); %>
+
+
+<div class="flex-container login-container">
+    <div class="erreur-login hide-content">
+        Utilisateur ou mot de passe incorrects
+    </div>
+    <form action="/connecter" class="flex-container form-container" method="POST">
+        <div class="input-field">
+            <input name="login" type="text" id="login" required>
+            <label for="login">Identifiant</label>
+        </div>
+        <div class="input-field">
+            <input type="password" name="password" id="password">
+            <label for="password">Mot de Passe</label>
+        </div>
+        <button type="submit" class="btn">Valider</button>
+    </form>
+</div>
+<script src="./js/connecter.js"></script>
+<%- include('./footer'); %>

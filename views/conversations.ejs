@@ -1,0 +1,57 @@
+<%- include('./header'), {convos: convos}; %>
+<section id="contenaire" class="flex-container menu-principal">
+    <div class="aside-wrapper flex-container">
+        <aside id="sidebar-contacts" class="flex-container">
+            <% convos.forEach(
+                (convo) => { %>
+                    <div id="<%= convo.Login %>" class="flex-container contact-box">
+                        <span class="profil-img">
+                            <img src="<%= convo.avatar %>" alt="">
+                        </span>
+                        <span class="flex-container profile-info">
+                            <span class="nom-profile"><%= convo.affichage ? convo.affichage : convo.Login %></span>
+                        </span>
+                      </div>
+             <%   }
+            ) %>
+
+            <% %>
+        </aside>
+        <div class="search-box flex-container">
+            <input type="text" class="search-term" placeholder="Ajouter un contact">
+            <i class="material-icons search">person_add</i>
+        </div>
+    </div>
+    
+    <section class="flex-container message-window">
+        <div class="flex-container tabs">
+            
+        </div>
+            <div class="outer-wrapper">
+                
+            </div>
+        
+        
+            <div class="message-saisi-wrapper">
+                <div class="flex-container message-saisi">
+                    <span class="message-input">
+                        <input placeholder="Aa" type="text" id="message-input-field">
+                    </span>
+                    <span class="flex-container send_button">
+                        <i id="envoyer-message" class="material-icons">send</i>
+                    </span>
+                </div>
+            </div>
+            
+        
+        
+            
+        </div>
+    </section>
+</section>
+
+
+<script src="./js/composants.js"></script>
+<script src="./js/conversations.js"></script>
+    
+<%- include('./footer'); %>

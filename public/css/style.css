@@ -1,0 +1,313 @@
+body {
+    min-height: 100vh;
+}
+nav {
+    background-color:#02C756;
+    padding: 0 1%;
+    position: fixed;
+}
+nav i {
+    font-size: 48px;
+}
+
+
+.accueil-page .btn-large {
+    background-color:#02C756;
+}
+.accueil-page {
+    font-size: 1.5em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.accueil-bouton {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.accueil-bouton * {
+    margin: auto 2em;
+}
+.inscription {
+    margin: 10vh auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    width: 300px;
+}
+.login-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.erreur-etape-1 {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 3em;
+    background-color: red;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+}
+.erreur-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4em;
+    width: 300px;
+    height: 3em;
+    background-color: red;
+}
+.form-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    padding-top: 20px;
+}
+.input-field {
+    width: 100%;
+}
+.profile-avatar {
+    font-size: 10em;
+}
+.inscription input {
+    width: 80%;
+}
+.inscription .input-field {
+    
+    margin-bottom: 1em !important;
+}
+.premiere-etape, .deuxieme-etape {
+    width: 100%;
+}
+.identifiant-box {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+.premiere-etape {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.deuxieme-etape {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-container {
+    display: flex;
+}
+.menu-principal {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.message-window {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.message-window-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100%;
+}
+.outer-wrapper {
+    height: 100%;
+    overflow-y: auto;
+}
+#contenaire{
+    height: calc(100vh - 64px);
+}
+#sidebar-contacts {
+    min-width: 300px;
+    border-right: 1px solid rgba(51,51,51,.12);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.contact-box {
+    border-bottom: rgba(51,51,51,.12) solid 1px;
+    min-height: 72px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#dcedc8;
+}
+.contact-box:hover {
+    background-color: #8bc34a;
+    cursor: pointer;
+}
+.contact-box-active {
+    background-color:#7cb342;
+}
+.contact-box-active:hover {
+    background-color:#689f38;
+}
+.close-tab{
+    font-size: 1em;
+    position: absolute;
+    top: 5px;
+    right:  5px;
+    border-radius: 100%;
+    
+}
+.close-tab:hover {
+    background-color: lightgray;
+}
+.tabs {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 48px;
+    box-shadow: 0 1px 1px 1px rgba(51,51,51,.12);
+}
+.hide-content {
+    display:none !important;
+}
+.tab {
+    width: 15%;
+    border-right: 1px solid #f1f8e9;
+    border-bottom: 1px solid #f1f8e9;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.tab:hover{
+    background-color: #f1f8e9;
+    border-bottom: 3px solid #ccff90;
+    cursor:pointer;
+}
+.tab-active {
+    background-color: #b2ff59;
+    border-bottom:3px solid #64dd17;
+}
+.tab-active:hover{
+    background-color:#64dd17;
+    border-bottom:3px solid #558b2f;
+}
+.message-saisi {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 72px;
+    border-top: 2px solid #02C756;
+    padding-left: 10px;
+    position: sticky;
+}
+.message-input {
+    flex-basis: 95%;
+}
+.send_button {
+    margin-left: 5px;
+    margin: auto;
+}
+.message-bulbe {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4px 8px;
+}
+.message-bulbe * {
+    margin: auto 4px;
+}
+.message-content {
+    border: rgba(51,51,51,.12) solid 2px;
+    border-radius: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5em;
+}
+
+.profil-img img {
+    height: 64px;
+    width: 64px;
+    border: 2px solid rgba(51,51,51,.12);
+    border-radius: 100%;
+    margin: .5em .5em;
+}
+.dernier-message {
+    font-size: .9em;
+    color:gray ;
+}
+.profile-info {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-grow: 1;
+}
+
+.group-members {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 20%;
+}
+.group-members ul {
+    list-style-type: none;
+    margin-left: 10%;
+}
+.enseignante {
+    margin-left: 20%;
+    font-size: 1.1em;
+}
+.aside-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+}
+.search-box {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 72px;
+    border-top: 1px solid rgba(51,51,51,.12);
+    border-right: 1px solid rgba(51,51,51,.12);
+    width: 100%;
+    padding: 5px;
+}
+.search-box i {
+    
+    font-size: 2em;
+    margin: .5em;
+}
+.search-box i:hover {
+    
+    cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+    .aside-wrapper {
+        display:none    }
+        .sidenav-trigger {
+            display: inline;
+        }
+        
+    .accueil-bouton {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+    

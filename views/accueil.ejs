@@ -1,0 +1,40 @@
+<%- include('./header'); %>
+<div class="flex-container accueil-page">
+    <h1>Université de Béjaia</h1>
+    <h2>Projet Fin de Cycle Pour l'Année 2019-2020</h2>
+    <p>Nous présentons une application d'une messagerie instantannée.</p>
+    <% if(!isAuthenticated) { %>
+        <div class="flex-container accueil-bouton">
+                <a href="/connecter" class="btn-large">Se Connecter</a>
+           
+                <p id="or">OU</p> 
+            
+                <a href="/inscrire" class="btn-large">S'Inscrire</a>
+            
+        </div>
+
+
+  <%  } else {%>
+        <a href="/conversations" class="btn-large">Voir conversations</a>
+        <% } %>
+</div>
+<div class="group-members flex-container">
+        <p><strong>Conceptée et réalisée par:</strong></p>
+                <ul>
+                        <li>BENAKCHA Mebarek Raid</li>
+                        <li>KASSA Karim</li>
+                        <li>MESBAH Abdelhak</li>
+                        <li>AMEUR Nouredine</li>
+                </ul>
+</div>               
+<div class="enseignante">
+        <p><strong>GROUPE C2.</strong> </p>
+        <p><strong>Enseignante du module:</strong>  Mme BACHIRI Lina</p>
+</div>
+        
+
+        
+
+
+    
+<%- include('./footer'); %>
